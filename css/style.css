@@ -1,0 +1,483 @@
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0; padding: 0; box-sizing: border-box;
+	/*font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;*/
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0; padding: 0;
+	text-transform: capitalize;
+}
+h6{
+	font-weight: 400;
+	font-size: 13px;
+}
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a{
+	margin: 0; padding: 0;
+	text-decoration: none;
+}
+p{
+	margin: 0; padding: 0;
+}
+/*--------------------- wellcome part start ---------------------*/
+/*================ nabver 
+======================*/
+.navbar{
+	background: transparent;
+	margin: 0;
+	padding: 10px 0;
+
+}
+.navbar-bg{
+	background: linear-gradient(#54D154, #2B9B2B);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.navbar-brand img{
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+.nav-item{
+	margin-right: 10px;
+}
+.nav-item::before{
+	content: '';
+	width: 0;
+	height: 4px;
+	background: #53D153;
+	display: block;
+	margin: auto;
+	transition: .6s;
+}
+.nav-item:hover::before{
+	width: 80%;
+}
+.nav-link{
+	color: #fff;
+}
+.nav-link:hover{
+	font-weight: 600;
+	color: #fff;
+}
+.search{
+	width: 100%;
+	max-width: 240px;
+	background: rgba(255, 255, 255, .7);
+	display: flex;
+	align-items: center;
+	border-radius: 60px;
+	padding: 0 20px;
+}
+.search input{
+	background: transparent;
+	flex: 1;
+	outline: none;
+	border: 0;
+	font-size: 16px;
+}
+.search button{
+	outline: none;
+	background: none;
+	border: none;
+}
+.offcanvas{
+	background: rgba(0, 0, 0, 0.6);
+}
+.btn-close{
+	z-index: 99;
+}
+/*=========================== navber end
+=================================*/
+.hero-part{
+	background: url(../img/hero-bg.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+}
+.hero-con{
+	padding: 295px 0;
+	color: #fff;
+}
+.hero-con h1{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 55px;
+}
+.hero-con a{
+	color: #fff;
+	font-size: 18px;
+	padding: 5px 20px;
+	border: 1.5px solid #fff;
+	display: inline-block;
+	border-radius: 30px;
+	margin-top: 30px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.hero-con a:hover{
+	color: #fff;
+	border: 1.5px solid #53D153;
+}
+span{
+	width: 0;
+	height: 100%;
+	border-radius: 30px;
+	top: 0;
+	left: 0;
+	background: #53D153;
+	position: absolute;
+	transition: .6s;
+	z-index: -1;
+}
+.hero-con a:hover span{
+	width: 100%;
+}
+.scroll-btn{
+	padding: 2px 8px;
+	background: rgba(255, 255, 255, 0.6);
+	color: #000;
+	display: inline-block;
+	border-radius: 30px;
+	margin-bottom: 10px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+.fa-arrow-down{
+	padding-left: 5px;
+}
+/*===================== hero part end ===========================*/
+
+/*===================== what we do start ===========================*/
+/*------------ headeing part--
+-----------------*/
+.heading{
+	padding: 30px;
+}
+.heading h3{
+	font-weight: 300;
+	font-size: 22px;
+	letter-spacing: 2px;
+	color: #828181;
+}
+.heading h3::after{
+	content: '';
+	width: 40px;
+	height: 2px;
+	background: #818181;
+	display: block;
+	margin: 6px auto;
+}
+.heading p{
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #B7B3B3;
+}
+/*------------ headeing part end --
+-----------------*/
+#we-do{
+	padding-bottom: 50px;
+	background: #fff;
+}
+.content img{
+	width: 35%;
+	padding: 30px 25px;
+	border-radius: 26px;
+	background: rgba(224, 243, 224, 1.0);
+}
+.content-text h5{
+	font-weight: 700;
+	color: #828181;
+	padding: 15px 0;
+}
+.content-text p{
+	font-weight: 300;
+	font-size: 15px;
+	color: #828181;
+}
+.content-text a{
+	padding: 2px 8px 5px 8px;
+	background: #53D153;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 30px;
+	margin-top: 20px;
+	display: inline-block;
+}
+/*===================== what we do end =============================*/
+/*===================== working part start ========================*/
+.work-part{
+	background: #54D154;
+	padding-bottom: 36px;
+}
+.work-part .heading h3,
+.work-part .heading p{
+	color: #207B20;
+}
+.work-part .heading h3::after{
+	background: #207B20;
+}
+.btn-group{
+	left: 50%;
+	transform: translateX(-50%);
+}
+.btn{
+	border-radius: 30px;
+	background: #fff;
+	border: 1.8px solid #2B9B2B;
+	color: #2B9B2B;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 10px 20px;
+	transition: .6s;
+}
+.btn:hover{
+	background: #2B9B2B;
+	color: #fff;
+	border: 1.8px solid #2B9B2B;
+}
+.images{
+	padding: 40px 0;
+}
+.btn-group-2 .btn{
+	background: #2B9B2B;
+	border: 1.8px solid #2B9B2B;
+	color: #fff;
+}
+.fa-arrow-right{
+	padding-left: 5px;
+}
+/*===================== working part end ========================*/
+
+/*===================== testimonial part start =====================*/
+.ceo-img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px double #2B9B2B;
+}
+.testi-content{
+	padding-top: 30px;
+}
+.testi-content h5,
+.identity h3:nth-child(1){
+	color: #444444;
+}
+.ceo{
+	padding: 30px 0;
+}
+.identity{
+	padding-left: 10px;
+}
+.identity h3:nth-child(2){
+	color: #CCCCCC;
+}
+.ceo{
+	padding-bottom: 60px;
+}
+/*===================== testimonial part end ======================*/
+
+/*===================== clind part start ======================*/
+.logos{
+	padding: 30px 0 40px 0;
+}
+/*===================== clind part end ======================*/
+
+/*===================== team part start ======================*/
+.line{
+	width: 100%;
+	height: 80px;
+	margin: 10px 0;
+}
+.line-hight{
+	width: 2px;
+	height: 100%;
+	background: #1F7B1F;
+	margin-left: 50%;
+}
+.member-name p{
+	font-weight: 700;
+	font-size: 18px;
+	color: #fff;
+	padding-bottom: 10px;
+}
+.icon{
+	height: 40px;
+	width: 135px;
+	background: #C5E9C5;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+.icon i{
+	padding: 0 10px;
+}
+.fa-behance, .fa-twitter{
+	font-size: 18px;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+.fa-dribbble{
+	font-size: 26px;
+	color: 	#E94B89;
+}
+.fa-behance{
+	background: #0061FF;
+}
+.fa-twitter{
+	background: #00ABED;
+}
+.icon .fa-brands{
+	transition: .4s;
+}
+.icon .fa-brands:hover{
+	transform: rotate(360deg);
+}
+.work-button{
+	background: #3EBA3E;
+	padding: 30px 0;
+}
+.work-btn{
+	color: #fff;
+	font-size: 19px;
+	padding: 6px 15px;
+	background: #53D153;
+	display: inline-block;
+	margin-left: 50%;
+	border-radius: 20px;
+	transform: translateX(-50%);
+	transition: .4s;
+}
+.work-btn:hover{
+	box-shadow: 0 4px 5px -2px #555;
+}
+/*===================== team part end ======================*/
+
+/*===================== contact part start ======================*/
+#contact-part{
+	background: #333333;
+	padding: 0 0 25px 0;
+}
+.contact .heading{
+	padding-bottom: 10px;
+}
+.contact-content .icon{
+	margin-top: 20px;
+}
+.contact-content small{
+	color: #CCCCCC;
+	padding-right: 130px;
+}
+.contact-area small{
+	color: #ccc;
+}
+.contact-form{
+	background: #434343;
+}
+.contact-form:nth-child(1){
+	border-radius: 5px 5px 0 0;
+}
+.contact-form textarea,
+.contact-form input{
+	border: none;
+	background: transparent;
+	color: #fff;
+	padding-left: 10px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+}
+.contact-form button{
+	width: 100%;
+	display: inline-block;
+	background: #2B9B2B;
+	outline: none;
+	border: none;
+	border-radius: 0 0 5px 5px;
+	padding: 4px 0;
+	color: #fff;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+	color: #777777;
+}
+form{
+	margin-top: 20px;
+}
+.resent-img{
+	color: #fff;
+}
+.resent-img img{
+	width:68px;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.img-text p:nth-child(1){
+	font-size: 22px;
+	font-weight: 300;
+	color: #CCCCCC;
+}
+.img-text p:nth-child(2){
+	font-size: 16px;
+	padding: 1px 3px;
+	display: inline-block;
+	border-radius: 3px;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.megazine{
+	background: #53D153;
+}
+.design{
+	background: #FFBA00;
+}
+.p-graphy{
+	background: #089CEA;
+}
+.book{
+	background: #F34C03;
+}
+/*===================== footer part end ======================*/
+/*===================== seen on part start ======================*/
+.seen-on{
+	background: #212121;
+	padding: 15px 0 25px 0;
+}
+.seen-on .heading{
+	padding:0 0 10px 0;
+}
+.seen-on .heading h3{
+	color: #101010;
+}
+.seen-on .heading h3:after{
+	background: #101010;
+}
+/*===================== seen on part end ======================*/
+footer{
+	background: #111111;
+	color: #fff;
+	padding: 8px 0;
+}
+footer p{
+	font-size: 17px;
+}

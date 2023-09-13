@@ -1,0 +1,18 @@
+@media screen and (max-width: 992px){
+	.nav-link{
+		display: inline-block;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+}
+@media screen and (max-width: 768px){
+	.team-part .span_1_of_5{
+		width: 33%;
+		margin-bottom: 64px;
+}
+@media screen and (max-width: 320px){
+	}.team-part .span_1_of_5{
+		width: 50%;
+		margin-bottom: 44px;
+	}
+}
